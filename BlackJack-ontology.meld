@@ -1,0 +1,51 @@
+;;;; -*-  Mode: LISP; Syntax: Common-Lisp; Base: 10                          -*-
+;;;; ---------------------------------------------------------------------------
+;;;; File name: BlackJack-CardsMt.meld
+;;;;    System: FIRE
+;;;;    Author: Jennifer Liu, Yani Xie, Jiahua Chen
+;;;;   Created: February 20, 2018 16:16:29
+;;;;   Purpose: 371 Final Project
+;;;; ---------------------------------------------------------------------------
+
+;;; Simple ontology for experimenting with the Horn-clause based query system
+;;; in FIRE
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(in-microtheory BaseKB)
+
+(isa BlackJackTestMt Microtheory)
+(comment BlackJackTestMt
+  "BlackJackTestMt is a microtheory for testing ideas in EECS 371 final project.")
+
+(in-microtheory BlackJackTestMtTestMt)
+
+(genlMt BlackJackTestMtTestMt CardsMt)
+
+(isa BlackJack Collection)
+
+(comment BlackJack
+  "A BlackJack is a card game")
+
+;;; Any new predicates you need to define should go here.
+;;; Every new predicate needs to have an isa statement saying what it
+;;; is an instance of, an arity statement, argIsa statements declaring the
+;;; types of its arguments, a genlPreds statement connecting it into the predicate
+;;; hiearchy, and a comment describing in English its intended meaning.
+
+(isa hasValue Predicate)
+(arity hasValue 2)
+(arg1Isa hasValue Card)
+(arg2Isa hasValue Integer)
+
+(isa indexOf Predicate)
+(arity indexOf 2)
+(arg1Isa indexOf Card)
+(arg2Isa indexOf Integer)
+
+(isa Card1LessThanCard2 Predicate)
+(arity Card1LessThanCard2 2)
+(arg1Isa Card1LessThanCard2 Card)
+(arg2Isa Card1LessThanCard2 Card)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; End of Code

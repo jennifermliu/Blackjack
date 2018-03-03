@@ -1,0 +1,37 @@
+;;;; -*-  Mode: LISP; Syntax: Common-Lisp; Base: 10                          -*-
+;;;; ---------------------------------------------------------------------------
+;;;; File name: BlackJack-CardsMt.meld
+;;;;    System: FIRE
+;;;;    Author: Jennifer Liu, Yani Xie, Jiahua Chen
+;;;;   Created: February 20, 2018 16:16:29
+;;;;   Purpose: 371 Final Project
+;;;; ---------------------------------------------------------------------------
+
+;;; Simple ontology for experimenting with the Horn-clause based query system
+;;; in FIRE
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(in-microtheory BlackJackTestRulesMt)
+
+(isa BlackJackTestRulesMt Microtheory)
+(comment BlackJackTestRulesMt
+  "The BlackJackTestRulesMt microtheory is for testing Horn-clause rules,
+   as used via FIRE's query procedure.")
+
+
+(genlMt BlackJackTestMt BlackJackTestRulesMt)
+;;; Define your Horn clause rules here, for recognizing that something is
+;;; a CS hangout.  (Jiahua added)
+
+
+(<== (Card1LessThanCard2 ?card1 ?card2)
+     (isa ?card1 Card)
+     (hasValue ?card1 v1)
+     (isa ?card2 Card)
+     (hasValue ?card2 v2)
+     (lessThan v1 v2)
+)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; End of Code
