@@ -10,96 +10,234 @@
 (in-microtheory CardsMt)
 
 ;;;;Ace
-(isa ace Card)
-(hasValue ace 1)
-(indexOf ace 0)
-(quantityCount ace 4)
+(isa ace1 Card)
+(hasValue ace1 1)
+(indexOf ace1 0)
+
+(isa ace2 Card)
+(hasValue ace2 1)
+(indexOf ace2 1)
+
+(isa ace3 Card)
+(hasValue ace3 1)
+(indexOf ace3 2)
+
+(isa ace4 Card)
+(hasValue ace4 1)
+(indexOf ace4 3)
+
 
 ;;;2
-(isa two Card)
-(hasValue two 2)
-(indexOf two 1)
-(quantityCount two 4)
+(isa two1 Card)
+(hasValue two1 2)
+(indexOf two1 4)
+
+(isa two2 Card)
+(hasValue two2 2)
+(indexOf two2 5)
+
+(isa two3 Card)
+(hasValue two3 2)
+(indexOf two3 6)
+
+(isa two4 Card)
+(hasValue two4 2)
+(indexOf two4 7)
 
 ;;;3
-(isa three Card)
-(hasValue three 3)
-(indexOf three 2)
-(quantityCount three 4)
+(isa three1 Card)
+(hasValue three1 3)
+(indexOf three1 8)
 
+(isa three2 Card)
+(hasValue three2 3)
+(indexOf three2 9)
+
+(isa three3 Card)
+(hasValue three3 3)
+(indexOf three3 10)
+
+(isa three4 Card)
+(hasValue three4 3)
+(indexOf three4 11)
 
 ;;;4
-(isa four Card)
-(hasValue four 4)
-(indexOf four 3)
-(quantityCount four 4)
+(isa four1 Card)
+(hasValue four1 4)
+(indexOf four1 12)
+
+(isa four2 Card)
+(hasValue four2 4)
+(indexOf four2 13)
+
+(isa four3 Card)
+(hasValue four3 4)
+(indexOf four3 14)
+
+(isa four4 Card)
+(hasValue four4 4)
+(indexOf four4 15)
 
 
 ;;;5
-(isa five Card)
-(hasValue five 5)
-(indexOf five 4)
-(quantityCount five 4)
+(isa five1 Card)
+(hasValue five1 5)
+(indexOf five1 16)
+
+(isa five2 Card)
+(hasValue five2 5)
+(indexOf five2 17)
+
+(isa five3 Card)
+(hasValue five3 5)
+(indexOf five3 18)
+
+(isa five4 Card)
+(hasValue five4 5)
+(indexOf five4 19)
 
 ;;;6
-(isa six Card)
-(hasValue six 6)
-(indexOf six 5)
-(quantityCount six 4)
+(isa six1 Card)
+(hasValue six1 6)
+(indexOf six1 20)
+
+(isa six2 Card)
+(hasValue six2 6)
+(indexOf six2 21)
+
+(isa six3 Card)
+(hasValue six3 6)
+(indexOf six3 22)
+
+(isa six4 Card)
+(hasValue six4 6)
+(indexOf six4 23)
+
 
 ;;;7
-(isa seven Card)
-(hasValue seven 7)
-(indexOf seven 6)
-(quantityCount seven 4)
+(isa seven1 Card)
+(hasValue seven1 7)
+(indexOf seven1 24)
+
+(isa seven2 Card)
+(hasValue seven2 7)
+(indexOf seven2 25)
+
+(isa seven3 Card)
+(hasValue seven3 7)
+(indexOf seven3 26)
+
+(isa seven4 Card)
+(hasValue seven4 7)
+(indexOf seven4 27)
 
 
 ;;;8
-(isa eight Card)
-(hasValue eight 8)
-(indexOf eight 7)
-(quantityCount eight 4)
+(isa eight1 Card)
+(hasValue eight1 8)
+(indexOf eight1 28)
 
+(isa eight2 Card)
+(hasValue eight2 8)
+(indexOf eight2 29)
+
+(isa eight3 Card)
+(hasValue eight3 8)
+(indexOf eight3 30)
+
+(isa eight4 Card)
+(hasValue eight4 8)
+(indexOf eight4 31)
 
 ;;;9
-(isa nine Card)
-(hasValue nine 9)
-(indexOf nine 8)
-(quantityCount nine 4)
+(isa nine1 Card)
+(hasValue nine1 9)
+(indexOf nine1 32)
+
+(isa nine2 Card)
+(hasValue nine2 9)
+(indexOf nine2 33)
+
+(isa nine3 Card)
+(hasValue nine3 9)
+(indexOf nine3 34)
+
+(isa nine4 Card)
+(hasValue nine4 9)
+(indexOf nine4 35)
 
 ;;;10
-(isa ten Card)
-(hasValue ten 10)
-(indexOf ten 9)
-(quantityCount ten 4)
+(isa ten1 Card)
+(hasValue ten1 10)
+(indexOf ten1 36)
+
+(isa ten2 Card)
+(hasValue ten2 10)
+(indexOf ten2 37)
+
+(isa ten3 Card)
+(hasValue ten3 10)
+(indexOf ten3 38)
+
+(isa ten4 Card)
+(hasValue ten4 10)
+(indexOf ten4 39)
 
 
 ;;;jack 
-(isa jack Card)
-(hasValue jack 10)
-(indexOf jack 10)
-(quantityCount jack 4)
+(isa jack1 Card)
+(hasValue jack1 10)
+(indexOf jack1 40)
+
+(isa jack2 Card)
+(hasValue jack2 10)
+(indexOf jack2 41)
+
+(isa jack3 Card)
+(hasValue jack3 10)
+(indexOf jack3 42)
+
+(isa jack4 Card)
+(hasValue jack4 10)
+(indexOf jack4 43)
 
 ;;;queen 
-(isa queen Card)
-(hasValue queen 10)
-(indexOf queen 11)
-(quantityCount queen 4)
+(isa queen1 Card)
+(hasValue queen1 10)
+(indexOf queen1 44)
+
+(isa queen2 Card)
+(hasValue queen2 10)
+(indexOf queen2 45)
+
+(isa queen3 Card)
+(hasValue queen3 10)
+(indexOf queen3 46)
+
+(isa queen4 Card)
+(hasValue queen4 10)
+(indexOf queen4 47)
 
 ;;;king 
-(isa king Card)
-(hasValue king 10)
-(indexOf king 12)
-(quantityCount king 4)
+(isa king1 Card)
+(hasValue king1 10)
+(indexOf king1 48)
+
+(isa king2 Card)
+(hasValue king2 10)
+(indexOf king2 49)
+
+(isa king3 Card)
+(hasValue king3 10)
+(indexOf king3 50)
+
+(isa king4 Card)
+(hasValue king4 10)
+(indexOf king4 51)
 
 
-(isa c1 DrawCard)
-(indexOf c1 (RandomIntegerFn 12))
+(currentSum 0)
 
-
-
-(isa c2 DrawCard)
-(indexOf c2 (RandomIntegerFn 12))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; End of Code
