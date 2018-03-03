@@ -17,11 +17,12 @@
 (comment BlackJackTestMt
   "BlackJackTestMt is a microtheory for testing ideas in EECS 371 final project.")
 
-(in-microtheory BlackJackTestMtTestMt)
+(in-microtheory BlackJackTestMt)
 
-(genlMt BlackJackTestMtTestMt CardsMt)
+(genlMt BlackJackTestMt CardsMt)
 
 (isa BlackJack Collection)
+(isa DrawCard Collection)
 
 (comment BlackJack
   "A BlackJack is a card game")
@@ -42,10 +43,13 @@
 (arg1Isa indexOf Card)
 (arg2Isa indexOf Integer)
 
-(isa Card1LessThanCard2 Predicate)
-(arity Card1LessThanCard2 2)
-(arg1Isa Card1LessThanCard2 Card)
-(arg2Isa Card1LessThanCard2 Card)
+(isa CurrentSum Predicate)
+(arity currentSum 1)
+(arg1Isa currentSum Integer)
+
+
+
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; End of Code
