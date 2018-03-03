@@ -1,0 +1,105 @@
+;;;; -*-  Mode: LISP; Syntax: Common-Lisp; Base: 10                          -*-
+;;;; ---------------------------------------------------------------------------
+;;;; File name: BlackJack-CardsMt.meld
+;;;;    System: FIRE
+;;;;    Author: Jennifer Liu, Yani Xie, Jiahua Chen
+;;;;   Created: February 20, 2018 16:16:29
+;;;;   Purpose: 371 Final Project
+
+ 
+(in-microtheory CardsMt)
+
+;;;;Ace
+(isa ace Card)
+(hasValue ace 1)
+(indexOf ace 0)
+(quantityCount ace 4)
+
+;;;2
+(isa two Card)
+(hasValue two 2)
+(indexOf two 1)
+(quantityCount two 4)
+
+;;;3
+(isa three Card)
+(hasValue three 3)
+(indexOf three 2)
+(quantityCount three 4)
+
+
+;;;4
+(isa four Card)
+(hasValue four 4)
+(indexOf four 3)
+(quantityCount four 4)
+
+
+;;;5
+(isa five Card)
+(hasValue five 5)
+(indexOf five 4)
+(quantityCount five 4)
+
+;;;6
+(isa six Card)
+(hasValue six 6)
+(indexOf six 5)
+(quantityCount six 4)
+
+;;;7
+(isa seven Card)
+(hasValue seven 7)
+(indexOf seven 6)
+(quantityCount seven 4)
+
+
+;;;8
+(isa eight Card)
+(hasValue eight 8)
+(indexOf eight 7)
+(quantityCount eight 4)
+
+
+;;;9
+(isa nine Card)
+(hasValue nine 9)
+(indexOf nine 8)
+(quantityCount nine 4)
+
+;;;10
+(isa ten Card)
+(hasValue ten 10)
+(indexOf ten 9)
+(quantityCount ten 4)
+
+
+;;;jack 
+(isa jack Card)
+(hasValue jack 10)
+(indexOf jack 10)
+(quantityCount jack 4)
+
+;;;queen 
+(isa queen Card)
+(hasValue queen 10)
+(indexOf queen 11)
+(quantityCount queen 4)
+
+;;;king 
+(isa king Card)
+(hasValue king 10)
+(indexOf king 12)
+(quantityCount king 4)
+
+
+(isa c1 DrawCard)
+(indexOf c1 (RandomIntegerFn 12))
+
+
+
+(isa c2 DrawCard)
+(indexOf c2 (RandomIntegerFn 12))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; End of Code
