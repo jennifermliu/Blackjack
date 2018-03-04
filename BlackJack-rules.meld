@@ -20,16 +20,16 @@
 
 
 (genlMt BlackJackTestMt BlackJackTestRulesMt)
-;;; Define your Horn clause rules here, for recognizing that something is
-;;; a CS hangout.  (Jiahua added)
 
 
-(<== (Card1LessThanCard2 ?card1 ?card2)
-     (isa ?card1 Card)
-     (hasValue ?card1 v1)
-     (isa ?card2 Card)
-     (hasValue ?card2 v2)
-     (lessThan v1 v2)
+(<== (winsP1 ?val1 ?val2)
+    (lessThanOrEqualTo 21 ?val1)
+    (lessThanOrEqualTo ?val1 ?val2)
+)
+
+(<== (winsP2 ?val1 ?val2)
+    (lessThanOrEqualTo 21 ?val2)
+    (lessThanOrEqualTo ?val2 ?val1)
 )
 
 
