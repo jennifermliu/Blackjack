@@ -1,48 +1,66 @@
 # Blackjack
 
-1. player1:
-step1: draw two cards:  
+### player1:
+##### step1: draw two cards:
+
+```
 (and 
 (indexOf ?c1 0) 
 (hasValue ?c1 ?val1) 
 (indexOf ?c2 1)
 (hasValue ?c2 ?val2) 
 (evaluate ?ans (PlusFn ?val1 ?val2)))
+```
 
-step1:update currentSumP1
+##### step2:update currentSumP1
+```
 (currentSumP1 NUM) 
+```
 
-2. player2: 
-step1: draw two cards
+### player2: 
+##### step1: draw two cards
+
+```
 (and 
 (indexOf ?c1 2) 
 (hasValue ?c1 ?val1) 
 (indexOf ?c2 3)
 (hasValue ?c2 ?val2) 
 (evaluate ?ans (PlusFn ?val1 ?val2)))
+```
 
-step2:update currentSumP2
+##### step2:update currentSumP2
+```
 (currentSumP2 NUM) 
+```
 
 
-optional  
-3. player1: 
-step1: draw one card
+## optional  
+### 3. player1: 
+##### step1: draw one card
+
+```
 (and (indexOf ?c1 4) (hasValue ?c1 ?val1) (currentSumP1 ?val2)
      (evaluate ?ans (PlusFn ?val1 ?val2)))
+```
 
-
-step2: update currentSumP1
+##### step2: update currentSumP1
+```
 (currentSumP1 NUM) 
+```
 
   
-4. Player2: 
-step1: draw one card
+### Player2: 
+### step1: draw one card
+```
 (and (indexOf ?c1 5) (hasValue ?c1 ?val1) (currentSumP1 ?val2)
      (evaluate ?ans (PlusFn ?val1 ?val2)))
+```
 
-step2: update currentSumP2
+##### step2: update currentSumP2
+```
 (currentSumP2 NUM) 
+```
 
 
 
