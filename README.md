@@ -1,7 +1,7 @@
 # Blackjack
 
 ### player1:
-##### step1: draw two cards:
+##### step1: draw two cards
 
 ```
 (and 
@@ -51,7 +51,7 @@
 
   
 ### Player2: 
-### step1: draw one card
+##### step1: draw one card
 ```
 (and (indexOf ?c1 5) (hasValue ?c1 ?val1) (currentSumP1 ?val2)
      (evaluate ?ans (PlusFn ?val1 ?val2)))
