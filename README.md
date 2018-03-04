@@ -1,5 +1,6 @@
 # Blackjack
 
+## initial
 ### player1:
 ##### step1: draw two cards
 
@@ -35,7 +36,7 @@
 ```
 
 
-## optional  
+## (draw card) optional  
 ### 3. player1: 
 ##### step1: draw one card
 
@@ -62,5 +63,10 @@
 (currentSumP2 NUM) 
 ```
 
+## Result
+### Player1:
+(winsP1 currentSumP1 currentSumP2)
+### Player2:
+(winsP2 currentSumP1 currentSumP2)
 
 
