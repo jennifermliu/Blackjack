@@ -2,7 +2,7 @@
 
 ## initial
 ### player1:
-##### step1: draw two cards
+##### step1: draw two cards (Query)
 
 ```
 (and 
@@ -13,13 +13,13 @@
 (evaluate ?ans (PlusFn ?val1 ?val2)))
 ```
 
-##### step2:update currentSumP1
+##### step2:update currentSumP1 (Context: CardsMt; tell)
 ```
-(currentSumP1 NUM) 
+(currentSumP1 ans)
 ```
 
 ### player2: 
-##### step1: draw two cards
+##### step1: draw two cards (Query)
 
 ```
 (and 
@@ -30,15 +30,15 @@
 (evaluate ?ans (PlusFn ?val1 ?val2)))
 ```
 
-##### step2:update currentSumP2
+##### step2:update currentSumP2 (Context: CardsMt; tell)
 ```
-(currentSumP2 NUM) 
+(currentSumP2 ans) 
 ```
 
 
 ## (draw card) optional  
 ### player1: 
-##### step1: draw one card
+##### step1: draw one card (Query)
 
 ```
 (and (indexOf ?c1 4) (hasValue ?c1 ?val1) (currentSumP1 ?val2)
@@ -47,12 +47,14 @@
 
 ##### step2: update currentSumP1
 ```
-(currentSumP1 NUM) 
+(currentSumP1 ans)   --- (Context: CardsMt; tell)
+(currentSumP1 ans*)  --- (Context: CardsMt; untell)
+
 ```
 
   
 ### Player2: 
-##### step1: draw one card
+##### step1: draw one card (Query)
 ```
 (and (indexOf ?c1 5) (hasValue ?c1 ?val1) (currentSumP1 ?val2)
      (evaluate ?ans (PlusFn ?val1 ?val2)))
@@ -60,15 +62,16 @@
 
 ##### step2: update currentSumP2
 ```
-(currentSumP2 NUM) 
+(currentSumP2 ans)   ---(Context: CardsMt; tell)
+(currentSumP2 ans*)  ---(Context: CardsMt; untell) 
 ```
 
 ## Result
-### Player1:
+### Player1 (true: Player1 wins; None Found: Player1 loses):
 ```
 (and (currentSumP1 ?val1) (currentSumP2 ?val2) (winsP1 ?val1 ?val2))
 ```
-### Player2:
+### Player2 (true: Player2 wins; None Found: Player2 loses):
 ```
 (and (currentSumP1 ?val1) (currentSumP2 ?val2) (winsP2 ?val1 ?val2))
 ```
