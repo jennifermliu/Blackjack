@@ -51,8 +51,15 @@
 (arity CurrentSumP2 1)
 (arg1Isa CurrentSumP2 Integer)
 
+(isa winsP1 Predicate)
+(arity winsP1 2)
+(arg1Isa winsP1 Integer)
+(arg2Isa winsP1 Integer)
 
-
+(isa winsP2 Predicate)
+(arity winsP2 2)
+(arg1Isa winsP2 Integer)
+(arg2Isa winsP2 Integer)
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
