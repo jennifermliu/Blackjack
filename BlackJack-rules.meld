@@ -23,12 +23,12 @@
 
 
 (<== (winsP1 ?val1 ?val2)
-    (lessThanOrEqualTo 21 ?val1)
+    (lessThanOrEqualTo ?val1 21)
     (lessThanOrEqualTo ?val1 ?val2)
 )
 
 (<== (winsP2 ?val1 ?val2)
-    (lessThanOrEqualTo 21 ?val2)
+    (lessThanOrEqualTo ?val2 21)
     (lessThanOrEqualTo ?val2 ?val1)
 )
 
