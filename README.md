@@ -37,7 +37,7 @@
 
 
 ## (draw card) optional  
-### 3. player1: 
+### player1: 
 ##### step1: draw one card
 
 ```
