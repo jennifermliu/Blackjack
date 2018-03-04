@@ -66,11 +66,11 @@
 ## Result
 ### Player1:
 ```
-(winsP1 currentSumP1 currentSumP2)
+(and (currentSumP1 ?val1) (currentSumP2 ?val2) (winsP1 ?val1 ?val2))
 ```
 ### Player2:
 ```
-(winsP2 currentSumP1 currentSumP2)
+(and (currentSumP1 ?val1) (currentSumP2 ?val2) (winsP2 ?val1 ?val2))
 ```
 
 
