@@ -43,9 +43,13 @@
 (arg1Isa indexOf Card)
 (arg2Isa indexOf Integer)
 
-(isa CurrentSum Predicate)
-(arity currentSum 1)
-(arg1Isa currentSum Integer)
+(isa CurrentSumP1 Predicate)
+(arity CurrentSumP1 1)
+(arg1Isa CurrentSumP1 Integer)
+
+(isa CurrentSumP2 Predicate)
+(arity CurrentSumP2 1)
+(arg1Isa CurrentSumP2 Integer)
 
 
 
