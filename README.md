@@ -65,8 +65,12 @@
 
 ## Result
 ### Player1:
+```
 (winsP1 currentSumP1 currentSumP2)
+```
 ### Player2:
+```
 (winsP2 currentSumP1 currentSumP2)
+```
 
 
